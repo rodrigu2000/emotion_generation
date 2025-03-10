@@ -1,4 +1,5 @@
-data/
-models/
-outputs/
-pretrained_weights/
+encoder4editing/
+encoder4editing_no_c/
+pretrained_models/
+StyleCLIP/
+stylegan2-pytorch/
