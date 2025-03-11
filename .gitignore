@@ -1,5 +1,7 @@
 encoder4editing/
 encoder4editing_no_c/
-pretrained_models/
 StyleCLIP/
 stylegan2-pytorch/
+pretrained_models/e4e_ffhq_encode.pytorch
+pretrained_models/stylegan2_rosinality_256px_550k.pytorch
+
