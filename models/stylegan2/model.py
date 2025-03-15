@@ -480,7 +480,9 @@ class Generator(nn.Module):
             randomize_noise=True,
     ):
         if not input_is_latent:
-            styles = [self.style(s) for s in styles]
+            styles = [self.style(s) for s in styles] 
+            # print(len(styles)) # 1
+            # print(styles[0].shape) # [1, 512]
 
         if noise is None:
             if randomize_noise:
@@ -502,11 +504,13 @@ class Generator(nn.Module):
 
         if len(styles) < 2:
             inject_index = self.n_latent
+            # print(self.n_latent) # 18
 
             if styles[0].ndim < 3:
                 latent = styles[0].unsqueeze(1).repeat(1, inject_index, 1)
             else:
                 latent = styles[0]
+            # print(latent.shape) # [1, 18, 512]
 
         else:
             if inject_index is None:
