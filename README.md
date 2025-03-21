@@ -1,5 +1,7 @@
 # Text-driven Emotion Generation on Images
 
+https://github.com/rodrigu2000/emotion_generation.git
+
 ## Description
 
 The objective of this project is to perform image editing on portraits, focusing on human emotions—making people appear happy, sad, angry, surprised, etc. We employ text-driven GAN editing. Specifically, we use a StyleGAN model
