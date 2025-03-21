@@ -1,21 +1,32 @@
-# emotion_generation
+# Text-driven Emotion Generation on Images
 
-Difference between latent spaces : 
+## Description
 
-Z : initial
-W : intermediate
-W^+ : extension of W : different copy of w \in W for each layer of the generator (which will then be fed into Affine transformations to produce styles)
-S : style space
+The objective of this project is to perform image editing on portraits, focusing on human emotions—making people appear happy, sad, angry, surprised, etc. We employ text-driven GAN editing. Specifically, we use a StyleGAN model
+pretrained on the FFHQ dataset and optimize a CLIP-based loss function. Our editing process relies on latent optimization via gradient descent in the $\mathbb W^+$ latent space of StyleGAN.
 
-Expériences pour les posters : 
+## Demo
 
-    - Global demonstration : 5 neutral faces -> several emotions
-    - Emotion classification : non-explicit prompts, with vs withous classifier in the loss
-    - Custom evaluation metric on the image inversion (original vs ours)
-    - Custom evaluation metric with different truncation values
+The notebook **`emotion_editing_demo.ipynb`** provides a demonstration of our method. 
 
-Personal contributions : 
+## Pretrained models
 
-    - combination of e4e and gradient descent for image inversion
-    - emotion classifier in the loss of the gradient descent for edition
-    - evaluation metric : combination of ID_loss, FID and emotion classification
+Our method uses several pretrained models. Their weights must be in **`pretrained_models/`**.
+
+
+## Structure of the repository
+
+```
+emotion_generation/
+├── configs/                    # configs for pretrained models
+├── criteria/                   # definition of criteria for optimization loops
+├── emotionmmodel/              # definition of the visual emotion classifier
+├── input_images/               # example images to perform emotion editing
+├── notebooks/
+├── pretrained_models/          # pretrained weights
+├── quantitative_results/       # results of experiments
+├── utils/
+├── emotion_editing_demo.ipynb  # demonstration notebook
+├── requirements.txt
+```
+
