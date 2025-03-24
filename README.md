@@ -16,7 +16,7 @@ Download links :
 
 **pSp model using e4e encoder** : https://drive.google.com/file/d/1cUv_reLE6k3604or78EranS7XzuVMWeO/view?usp=sharing
 
-**Visual emotion classifier** : 
+**Visual emotion classifier** : https://drive.google.com/file/d/13uXNRhysuI8PV8aXJcgMAZVh6WVdW49V/view?usp=sharing
 
 **ArcFace model for identity loss** : https://drive.google.com/file/d/1N0MZSqPRJpLfP4mFQCS14ikrVSe8vQlL/view
 
