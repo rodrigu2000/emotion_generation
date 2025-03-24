@@ -20,6 +20,8 @@ Download links :
 
 **ArcFace model for identity loss** : https://drive.google.com/file/d/1N0MZSqPRJpLfP4mFQCS14ikrVSe8vQlL/view
 
+** Image-to-emotion classifier checkpoint : https://drive.google.com/file/d/1OyRjOe98XsFeUtD391R4Grt2t8X-2hss/view?usp=share_link
+
 ## Structure of the repository
 
 ```
